@@ -1,0 +1,23 @@
+OC\PlatformBundle\Entity\Advert:
+    type: entity
+    table: null
+    repositoryClass: OC\PlatformBundle\Repository\AdvertRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        date:
+            type: datetimetz
+        title:
+            type: string
+            length: 255
+        author:
+            type: string
+            length: 255
+        content:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

@@ -1,0 +1,8 @@
+
+        <ul>
+                {% for advert in adverts %}
+                        <li>Nom : {{ advert.title }}, <a href="{{ path('oc_platform_advert_edit', {id: advert.id}) }}">Editer</a>
+                            <a href="{{ path('oc_platform_advert_delete', {id: advert.id}) }}">Supprimer</a>
+                        </li>
+                {% endfor %}
+        </ul>

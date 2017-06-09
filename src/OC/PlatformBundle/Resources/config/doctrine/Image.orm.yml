@@ -1,0 +1,15 @@
+OC\PlatformBundle\Entity\Image:
+    type: entity
+    table: null
+    repositoryClass: OC\PlatformBundle\Repository\ImageRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        alt:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

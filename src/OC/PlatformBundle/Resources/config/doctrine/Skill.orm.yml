@@ -1,0 +1,15 @@
+OC\PlatformBundle\Entity\Skill:
+    type: entity
+    table: null
+    repositoryClass: OC\PlatformBundle\Repository\SkillRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
